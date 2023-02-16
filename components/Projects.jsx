@@ -1,51 +1,46 @@
-/* eslint-disable react/no-unescaped-entities */
-
-
-import React from "react";
-import tdigitalImg from "../public/assets/projects/tdigital.jpg";
-import nvidiaImg from "../public/assets/projects/nvidia.png";
-import twitchImg from "../public/assets/projects/twitch.jpg";
-import kodexImg from "../public/assets/projects/kodex.png";
-import ProjectItem from "./ProjectItem";
+import Image from 'next/image';
+import Link from 'next/link';
+import React from 'react';
+import tdigitalImg from '../public/assets/projects/tdigital.png';
+import cryptoImg from '../public/assets/projects/crypto.jpg'
+import netflixImg from '../public/assets/projects/netflix.jpg'
+import twitchImg from '../public/assets/projects/twitch.jpg'
+import ProjectItem from './ProjectItem';
 
 const Projects = () => {
   return (
-    <div id="projects" className="w-full">
-      <div className="max-w-[1240px] mx-auto px-2 py-16">
-        <p className="uppercase text-xl tracking-widest text-[#1e81b0]">
-          Projects
-        </p>
-        <h2 className="py-4">What I've Built</h2>
-        <div className="grid md:grid-cols-2 gap-8">
-         
+    <div id='projects' className='mt-10 p-12  w-full'>
+      <div className='max-w-[1240px] mx-auto px-2 py-16'>
+       
+        <h2 className='py-4 tracking-widest uppercase text-[#3a81cd]'>My latest projects</h2>
+        <div className='grid md:grid-cols-2 pt-8 gap-8'>
           <ProjectItem
-            title="tdigital"
-            tech="Gatsby JS and Wordpress pro"
+            title='tDigital'
             backgroundImg={tdigitalImg}
-            projectUrl="/firstproject"
+            projectUrl='/tdigital'
+            tech='Gatsby JS and WordPress'
           />
-
           <ProjectItem
-            title="Nvidia"
-            tech="React JS"
-            backgroundImg={nvidiaImg}
-            projectUrl="/secondproject"
+            title='Crypto App'
+            backgroundImg={cryptoImg}
+            projectUrl='/crypto'
+            tech='React JS'
+
           />
-
           <ProjectItem
-            title="Twitch"
-            tech="React JS"
+            title='Netflix App'
+            backgroundImg={netflixImg}
+            projectUrl='/netflix'
+            tech='React JS'
+
+          />
+          <ProjectItem
+            title='Twitch UI'
             backgroundImg={twitchImg}
-            projectUrl="/thirdproject"
-          />
+            projectUrl='/twitch'
+            tech='Next JS'
 
-          <ProjectItem
-            title="Kodex"
-            tech="React JS"
-            backgroundImg={kodexImg}
-            projectUrl="/fourthproject"
           />
-
         </div>
       </div>
     </div>

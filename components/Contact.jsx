@@ -1,115 +1,21 @@
 /* eslint-disable react/no-unescaped-entities */
-import Image from "next/image";
-import Link from "next/link";
-import React from "react";
-import { AiOutlineMail } from "react-icons/ai";
-import { BsFillPersonLinesFill } from "react-icons/bs";
-import { FaGithub, FaLinkedinIn } from "react-icons/fa";
-import contactImg from "../public/assets/contact.jpg";
-import { HiOutlineChevronDoubleUp } from 'react-icons/hi'
+import React from 'react'
 
 const Contact = () => {
   return (
-    <div id="contact" className='w-full lg:h-screen'>
-      <div className='max-w-[1240px] m-auto px-2 py-16 w-full'>
-        <p className='text-xl tracking-widest uppercase text-[#1e81b0]'>
-          Contact
-        </p>
-        <h2 className='py-4'>Get In Touch</h2>
-        <div className='grid lg:grid-cols-5 gap-8'>
-          {/* left */}
-          <div className='col-span-3 lg:col-span-2 w-full h-full shadow-xl shadow-gray-400 rounded-xl p-4'>
-            <div className='lg:p-4 h-full rounded-xl'>
-              <div>
-                <Image
-                  className='rounded-xl hover:scale-105 ease-in duration-300'
-                  src={contactImg}
-                  alt='/'
-                />
-              </div>
-              <div>
-                <h2 className='py-4'>Hanif Bahari</h2>
-                <p>Front-End Developer</p>
-                <p className='py-4'>
-                  I am available for freelance or full-time positions. Contact
-                  me and let's talk
-                </p>
-              </div>
-
-              <div>
-                <div className='flex items-center justify-between py-8'>
-                  <div className='rounded-full shadow-lg shadow-gray-400 p-4 cursor-pointer hover:scale-105 ease-in duration-300'>
-                    <FaLinkedinIn />
-                  </div>
-                  <div className='rounded-full shadow-lg shadow-gray-400 p-4 cursor-pointer hover:scale-105 ease-in duration-300'>
-                    <FaGithub />
-                  </div>
-                  <div className='rounded-full shadow-lg shadow-gray-400 p-4 cursor-pointer hover:scale-105 ease-in duration-300'>
-                    <AiOutlineMail />
-                  </div>
-                  <div className='rounded-full shadow-lg shadow-gray-400 p-4 cursor-pointer hover:scale-105 ease-in duration-300'>
-                    <BsFillPersonLinesFill />
-                  </div>
-                </div>
-              </div>
+    <div id='contact' className='w-full h-screen  flex justify-center items-center p-4'>
+        <form method='POST' action="https://getform.io/f/a699a1b2-f225-434e-b317-1fbbde8e006c" className='flex flex-col max-w-[600px] w-full'>
+            <div className='pb-8'>
+                <p className='text-4xl font-bold inline  text-[#3a81cd]'>Contact</p>
+                
             </div>
-          </div>
-          {/* right */}
-          <div className='col-span-3 w-full h-auto shadow-xl shadow-gray-400 rounded-xl lg:p-4'>
-            <div className='p-4'>
-                <form >
-                    <section className="grid md:grid-cols-2 gap-4 w-full py-2">
-                       
-                        <div className="flex flex-col">
-                            <label className="uppercase text-sm py-2">Name</label>
-                            <input className="border-2 rounded-lg p-3 flex border-gray-300" type="text" />
-
-                        </div>
-
-                        <div className="flex flex-col">
-                            <label className="uppercase text-sm py-2">Phone Number</label>
-                            <input className="border-2 rounded-lg p-3 flex border-gray-300" type="text" />
-
-                        </div>
-
-                    </section>
-
-                    <section className="flex flex-col py-2">
-                    <label className="uppercase text-sm py-2">Email</label>
-                    <input className="border-2 rounded-lg p-3 flex border-gray-300" type="email" />
-
-                    </section>
-
-                    <section className="flex flex-col py-2">
-                    <label className="uppercase text-sm py-2">Subject</label>
-                    <input className="border-2 rounded-lg p-3 flex border-gray-300" type="text" />
-
-                    </section>
-
-                    <section className="flex flex-col py-2">
-                    <label className="uppercase text-sm py-2">Message</label>
-                    <textarea className="border-2 rounded-lg p-3 border-gray-300" rows='10'></textarea>
-
-                    </section>
-
-                    
-<button className="w-full p-4 text-gray-100 mt-4 bg-cyan-500 hover:bg-cyan-600">Send Message</button>
-                </form>
-            </div>
-          </div>
-        </div>
-
-        <div className="flex justify-center py-12">
-            <Link href='/'>
-                <div className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300">
-                    <HiOutlineChevronDoubleUp className="text-[#1e81b0]" size={30}/>
-                </div>
-            </Link>
-        </div>
-
-      </div>
+            <input className='border-2 border-gray-300 px-4 py-2 rounded-full' type="text" placeholder='Name' name='name' />
+            <input className='border-2 border-gray-300 px-4 py-2 rounded-full my-4' type="email" placeholder='Email' name='email' />
+            <textarea className='border-2 border-gray-300 rounded-lg px-4 py-2' name="message" rows="10" placeholder='Message'></textarea>
+            <button className="transition duration-300 ease-in-out w-full p-4 text-gray-100 mt-4 bg-[#3a81cd] hover:bg-cyan-600">SEND</button>
+        </form>
     </div>
-  );
-};
+  )
+}
 
-export default Contact;
+export default Contact

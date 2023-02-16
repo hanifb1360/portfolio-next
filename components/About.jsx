@@ -1,14 +1,16 @@
-import Image from "next/image";
-import React from "react";
-import me from '../public/assets/me.JPEG'
+import React from 'react';
+import Image from 'next/image';
+import Link from 'next/link';
+import meImg from '../public/assets/me.JPEG';
 
 const About = () => {
   return (
-    <div id="about" className="w-full md:h-screen p-2 flex items-center py-16">
-      <div className="max-w-[1240px] m-auto md:grid grid-cols-3 gap-8">
-        <div className="col-span-2 p-4">
-          <p className="uppercase text-xl tracking-widest text-[#1e81b0]">About</p>
-          <h2 className="py-4">Who I Am</h2>
+    <div id='about' className='w-full md:h-screen p-12 flex items-center py-16'>
+      <div className='max-w-[1240px] m-auto md:grid grid-cols-3 gap-8'>
+        <div className='col-span-2'>
+         
+          <h2 className='uppercase  tracking-widest text-[#3a81cd]'>About me</h2>
+          <div className='pt-10'>
           <p className="py-2 text-gray-600">
             I am a creative professional with a passion for design and
             technology. After studying industrial design and obtaining a masters
@@ -27,14 +29,16 @@ const About = () => {
             my passion for creating intuitive user experiences and visually
             stunning interfaces to the digital world.
           </p>
-          <p className="py-2 text-gray-600 underline cursor-pointer">Check out some of my latest projects.</p>
+          </div>
+          <Link href='/#projects'>
+            <p className='py-8 text-gray-600 underline cursor-pointer'>
+              Some of my latest projects.
+            </p>
+          </Link>
         </div>
-        <div className="w-full h-auto m-auto shadow-gray-400 rounded-xl flex items-center justify-center p-4 hover:scale-105 ease-in duration-300">
-        <Image className="rounded-xl "
-          src={me}
-          alt="/"
-         
-        />
+        <div className='w-full h-auto m-auto shadow-xl group relative shadow-gray-400 rounded-xl flex items-center justify-center p-4 hover:scale-105 ease-in duration-300'>
+          
+          <Image src={meImg} className='rounded-xl' alt='/' />
         </div>
       </div>
     </div>

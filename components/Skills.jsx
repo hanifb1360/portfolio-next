@@ -2,12 +2,10 @@ import SkillCard from "./SkillCard";
 
 export default function Skills() {
   return (
-    <div id="skills" className="w-full lg:h-screen p-2">
+    <div id="skills" className="w-full lg:h-screen p-12">
       <div className="max-w-[max-w-[1240px] mx-auto flex flex-col justify-center h-full">
-        <p className="text-xl tracking-widest uppercase text-[#1e81b0]">
-          Skills
-        </p>
-        <h2 className="py-4">What I Can Do</h2>
+       
+        <h2 className="uppercase py-10 tracking-widest text-[#3a81cd]">Skills</h2>
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
           <SkillCard
             imageSrc="/../public/assets/skills/html.png"
@@ -74,7 +72,7 @@ export default function Skills() {
             title="Adobe Illustrator"
           />
           <SkillCard
-            imageSrc="/../public/assets/skills/storybook.png"
+            imageSrc="/../public/assets/skills/sb.png"
             title="Storybook"
           />
           <SkillCard
@@ -86,8 +84,8 @@ export default function Skills() {
             title="3D Modeling"
           />
           <SkillCard
-            imageSrc="/../public/assets/skills/sc.png"
-            title="Style Components"
+            imageSrc="/../public/assets/skills/wc.png"
+            title="Web Components"
           />
         </div>
       </div>
