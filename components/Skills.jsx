@@ -2,7 +2,7 @@ import SkillCard from "./SkillCard";
 
 export default function Skills() {
   return (
-    <div className="w-full lg:h-screen p-2">
+    <div id="skills" className="w-full lg:h-screen p-2">
       <div className="max-w-[max-w-[1240px] mx-auto flex flex-col justify-center h-full">
         <p className="text-xl tracking-widest uppercase text-[#1e81b0]">
           Skills

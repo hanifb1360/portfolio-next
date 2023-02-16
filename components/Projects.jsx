@@ -10,7 +10,7 @@ import ProjectItem from "./ProjectItem";
 
 const Projects = () => {
   return (
-    <div className="w-full">
+    <div id="projects" className="w-full">
       <div className="max-w-[1240px] mx-auto px-2 py-16">
         <p className="uppercase text-xl tracking-widest text-[#1e81b0]">
           Projects
@@ -22,28 +22,28 @@ const Projects = () => {
             title="tdigital"
             tech="Gatsby JS and Wordpress pro"
             backgroundImg={tdigitalImg}
-            projectUrl="https://www.tdigital.se/"
+            projectUrl="/firstproject"
           />
 
           <ProjectItem
             title="Nvidia"
             tech="React JS"
             backgroundImg={nvidiaImg}
-            projectUrl="/"
+            projectUrl="/secondproject"
           />
 
           <ProjectItem
             title="Twitch"
             tech="React JS"
             backgroundImg={twitchImg}
-            projectUrl="/"
+            projectUrl="/thirdproject"
           />
 
           <ProjectItem
             title="Kodex"
             tech="React JS"
             backgroundImg={kodexImg}
-            projectUrl="/"
+            projectUrl="/fourthproject"
           />
 
         </div>
