@@ -11,10 +11,8 @@ class Contact extends React.Component {
   sendEmail = (e) => {
     e.preventDefault();
 
+    emailjs.sendForm('service_bkbxe8n', 'template_ihrvx2e', this.form.current, 'AGC5Umln9-uNz59rD')
     
-    emailjs.sendForm(process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID, process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID, this.form.current, process.env.NEXT_PUBLIC_EMAILJS_USER_ID)
-
-
       .then((result) => {
           console.log(result.text);
           console.log('message sent');

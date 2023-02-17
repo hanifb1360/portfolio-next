@@ -35,3 +35,7 @@ html {
     @apply shadow-xl shadow-gray-400 rounded-xl uppercase bg-[#3a81cd] text-white
   }
 }
+
+.bg-sky-600:hover {
+  background-color: #2b6cb0;
+}
