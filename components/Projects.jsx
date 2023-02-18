@@ -12,7 +12,7 @@ const Projects = () => {
     <div id='projects' className='mt-10 p-12  w-full'>
       <div className='max-w-[1240px] mx-auto px-2 py-16'>
        
-        <h2 className='py-4 tracking-widest uppercase text-[#3a81cd]'>My latest projects</h2>
+        <h2 className='py-4 tracking-widest uppercase text-[#3a81cd]'>PROJECTS</h2>
         <div className='grid md:grid-cols-2 pt-8 gap-8'>
           <ProjectItem
             title='tDigital'
