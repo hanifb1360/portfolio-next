@@ -2,11 +2,10 @@ import SkillCard from "./SkillCard";
 
 export default function Skills() {
   return (
-    <div id="skills" className="w-full lg:h-screen p-12">
-      <div className="max-w-[max-w-[1240px] mx-auto flex flex-col justify-center h-full">
-       
-        <h2 className="uppercase py-10 tracking-widest text-[#3a81cd]">Skills</h2>
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+    <div id="skills" className="w-full md:h-screen p-12 flex items-center  py-16">
+      <div className="max-w-[max-w-[1240px] mx-auto flex mt-20 flex-col justify-center h-full">
+     
+        <div className="grid mt-8 md:grid-cols-2 lg:grid-cols-4 gap-8">
           <SkillCard
             imageSrc="/../public/assets/skills/html.png"
             title="HTML"

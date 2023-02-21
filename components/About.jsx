@@ -7,7 +7,7 @@ const About = () => {
   return (
     <div id='about' className='w-full md:h-screen p-12 flex items-center py-16'>
       <div className='max-w-[1240px] m-auto md:grid grid-cols-3 gap-8'>
-        <div className='col-span-2'>
+        <div className=' mt-8 col-span-2'>
          
           <h2 className='uppercase  tracking-widest text-[#3a81cd]'>About me</h2>
           <div className='pt-10'>
