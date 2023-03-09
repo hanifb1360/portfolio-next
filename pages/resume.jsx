@@ -20,9 +20,11 @@ const resume = () => {
       <main className='grid grid-cols-1 md:grid-cols-3 gap-0'>
         <section className='bg-[#384550] p-6 ml-0 pt-20 w-full h-30vh col-span-1 md:col-span-3'>
           <div className='pt-10'>
-            <h1 className='text-stone-200 tracking-widest   '>
-              Hanif Bahari{" "}
-            </h1>
+            <div className='pt-8 pb-2'>
+              <p className='text-4xl mt-5  inline  text-[#ffffff]'>
+                HANIF BAHARI
+              </p>
+            </div>
             <p className='text-emerald-400 text-base pt-2 font-normal md:text-xl'>
               Front-End Developer with a background in Design
             </p>

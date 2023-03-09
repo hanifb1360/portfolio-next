@@ -1,18 +1,19 @@
-import Image from 'next/image';
-import Link from 'next/link';
-import React from 'react';
-import tdigitalImg from '../public/assets/projects/tdigital.png';
-import cryptoImg from '../public/assets/projects/crypto.jpg'
-import netflixImg from '../public/assets/projects/netflix.jpg'
-import sneakexImg from '../public/assets/projects/sneakex.png'
-import ProjectItem from './ProjectItem';
+import Image from "next/image";
+import Link from "next/link";
+import React from "react";
+import tdigitalImg from "../public/assets/projects/tdigital.png";
+import shiktonImg from "../public/assets/projects/shikton.jpg";
+
+import sneakexImg from "../public/assets/projects/sneakex.png";
+import ProjectItem from "./ProjectItem";
 
 const Projects = () => {
   return (
     <div id='projects' className='mt-10 p-12  w-full'>
       <div className='max-w-[1240px] mx-auto  py-16'>
-       
-        <h2 className='py-4 tracking-widest uppercase text-[#3a81cd]'>PROJECTS</h2>
+        <div className='pt-8 pb-2'>
+          <p className='text-4xl mt-5  inline  text-[#3a81cd]'>PROJECTS</p>
+        </div>
         <div className='grid md:grid-cols-3 pt-8 gap-8'>
           <ProjectItem
             title='tDigital'
@@ -22,24 +23,16 @@ const Projects = () => {
           />
           <ProjectItem
             title='Crypto App'
-            backgroundImg={cryptoImg}
-            projectUrl='/crypto'
+            backgroundImg={shiktonImg}
+            projectUrl='/shikton'
             tech='React JS'
-
           />
-          <ProjectItem
-            title='Netflix App'
-            backgroundImg={netflixImg}
-            projectUrl='/netflix'
-            tech='React JS'
 
-          />
           <ProjectItem
             title='SNEAKEX'
             backgroundImg={sneakexImg}
             projectUrl='/sneakex'
             tech='React JS'
-
           />
         </div>
       </div>
